@@ -190,7 +190,7 @@ while True:
             mesa = [mesa[-1]]
         limpa_tela()
         cenario()
-        venceu = [len(jogadores[j]) == 0 for j in ordem]
+        venceu = [len(jogadores[j]) == 0 for j in jogadores.keys()]
         if any(venceu):
             vencedor = venceu.index(True)
             break
